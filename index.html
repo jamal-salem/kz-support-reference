@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portable IT support reference for Windows, PowerShell, hardware, scripts, and troubleshooting notes.">
+  <title>KZ Support Reference</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <p class="eyebrow">Portable IT Support Reference</p>
+      <h1>KZ Support Reference</h1>
+      <p class="subtitle">Quick access to support notes, commands, scripts, and troubleshooting references.</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="search-section" aria-labelledby="search-heading">
+      <h2 id="search-heading">Find a topic</h2>
+      <label class="search-label" for="category-search">Search categories</label>
+      <input
+        type="search"
+        id="category-search"
+        class="search-input"
+        placeholder="Search system info, PowerShell, troubleshooting..."
+        autocomplete="off"
+      >
+    </section>
+
+    <section class="category-section" aria-labelledby="categories-heading">
+      <div class="section-heading">
+        <h2 id="categories-heading">Reference Categories</h2>
+        <p>Starting points for common IT support areas.</p>
+      </div>
+
+      <div class="category-grid" id="category-grid">
+        <article class="category-card" data-title="System Information">
+          <h3>System Information</h3>
+          <p>Device details, OS version, uptime, and inventory notes.</p>
+        </article>
+
+        <article class="category-card" data-title="Hardware">
+          <h3>Hardware</h3>
+          <p>Component checks, diagnostics, and support references.</p>
+        </article>
+
+        <article class="category-card" data-title="Storage">
+          <h3>Storage</h3>
+          <p>Disk health, partitions, cleanup, and capacity checks.</p>
+        </article>
+
+        <article class="category-card" data-title="Devices">
+          <h3>Devices</h3>
+          <p>Printers, peripherals, drivers, and device management.</p>
+        </article>
+
+        <article class="category-card" data-title="Windows">
+          <h3>Windows</h3>
+          <p>Windows settings, services, updates, and recovery notes.</p>
+        </article>
+
+        <article class="category-card" data-title="Troubleshooting">
+          <h3>Troubleshooting</h3>
+          <p>Common issue paths, checks, fixes, and escalation notes.</p>
+        </article>
+
+        <article class="category-card" data-title="PowerShell">
+          <h3>PowerShell</h3>
+          <p>Useful commands, snippets, and administration examples.</p>
+        </article>
+
+        <article class="category-card" data-title="Scripts">
+          <h3>Scripts</h3>
+          <p>Reusable support scripts and maintenance helpers.</p>
+        </article>
+      </div>
+
+      <p class="empty-state" id="empty-state" hidden>No matching categories found.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>KZ Support Reference · Version 0.1.0</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
