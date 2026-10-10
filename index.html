@@ -25,7 +25,7 @@
         type="search"
         id="category-search"
         class="search-input"
-        placeholder="Search system info, PowerShell, troubleshooting..."
+        placeholder="Search hardware, network, reports, services..."
         autocomplete="off"
       >
     </section>
@@ -39,42 +39,124 @@
       <div class="category-grid" id="category-grid">
         <article class="category-card" data-title="System Information">
           <h3>System Information</h3>
-          <p>Device details, OS version, uptime, and inventory notes.</p>
+          <p>OS version, device identity, uptime, hardware summary, and inventory details.</p>
         </article>
 
-        <article class="category-card" data-title="Hardware">
-          <h3>Hardware</h3>
-          <p>Component checks, diagnostics, and support references.</p>
+        <article class="category-card linked-card" data-title="Hardware">
+          <a class="card-link" href="hardware/index.html">
+            <h3>Hardware</h3>
+            <p>Physical components, cables, ports, internal parts, and support checks.</p>
+          </a>
+        </article>
+
+        <article class="category-card" data-title="Network">
+          <h3>Network</h3>
+          <p>Connectivity checks, adapters, IP settings, DNS, and common network issues.</p>
         </article>
 
         <article class="category-card" data-title="Storage">
           <h3>Storage</h3>
-          <p>Disk health, partitions, cleanup, and capacity checks.</p>
-        </article>
-
-        <article class="category-card" data-title="Devices">
-          <h3>Devices</h3>
-          <p>Printers, peripherals, drivers, and device management.</p>
+          <p>Disk health, capacity, partitions, volumes, file systems, and drive checks.</p>
         </article>
 
         <article class="category-card" data-title="Windows">
           <h3>Windows</h3>
-          <p>Windows settings, services, updates, and recovery notes.</p>
+          <p>Windows settings, recovery options, startup behavior, and operating system notes.</p>
         </article>
 
-        <article class="category-card" data-title="Troubleshooting">
-          <h3>Troubleshooting</h3>
-          <p>Common issue paths, checks, fixes, and escalation notes.</p>
+        <article class="category-card" data-title="System Administration">
+          <h3>System Administration</h3>
+          <p>Users, groups, permissions, services, processes, tasks, and environment settings.</p>
         </article>
 
-        <article class="category-card" data-title="PowerShell">
-          <h3>PowerShell</h3>
-          <p>Useful commands, snippets, and administration examples.</p>
+        <article class="category-card" data-title="Files & File Management">
+          <h3>Files &amp; File Management</h3>
+          <p>Files, folders, paths, permissions, copy, move, delete, and search tasks.</p>
         </article>
 
-        <article class="category-card" data-title="Scripts">
-          <h3>Scripts</h3>
-          <p>Reusable support scripts and maintenance helpers.</p>
+        <article class="category-card" data-title="Power & Battery">
+          <h3>Power &amp; Battery</h3>
+          <p>Power state, battery health, charging behavior, sleep, and shutdown issues.</p>
+        </article>
+
+        <article class="category-card" data-title="Ports & Connections">
+          <h3>Ports &amp; Connections</h3>
+          <p>Physical connectors, expansion ports, cable fit, and connection troubleshooting.</p>
+        </article>
+
+        <article class="category-card" data-title="Devices">
+          <h3>Devices</h3>
+          <p>Device Manager checks, drivers, peripherals, status codes, and hardware detection.</p>
+        </article>
+
+        <article class="category-card" data-title="USB">
+          <h3>USB</h3>
+          <p>USB ports, hubs, cables, device detection, power, and data connection issues.</p>
+        </article>
+
+        <article class="category-card" data-title="Printers">
+          <h3>Printers</h3>
+          <p>Printer setup, queues, drivers, connectivity, paper handling, and print failures.</p>
+        </article>
+
+        <article class="category-card" data-title="Cameras">
+          <h3>Cameras</h3>
+          <p>Webcams, privacy settings, drivers, application access, and video problems.</p>
+        </article>
+
+        <article class="category-card" data-title="Audio / Speakers">
+          <h3>Audio / Speakers</h3>
+          <p>Playback devices, recording devices, volume, drivers, and audio routing.</p>
+        </article>
+
+        <article class="category-card" data-title="Keyboard">
+          <h3>Keyboard</h3>
+          <p>Input testing, layouts, shortcuts, stuck keys, wireless pairing, and drivers.</p>
+        </article>
+
+        <article class="category-card" data-title="Mouse">
+          <h3>Mouse</h3>
+          <p>Pointer behavior, buttons, scroll wheels, touchpads, pairing, and sensitivity.</p>
+        </article>
+
+        <article class="category-card" data-title="Displays / Monitors">
+          <h3>Displays / Monitors</h3>
+          <p>Monitor detection, resolution, scaling, cabling, projection, and display output.</p>
+        </article>
+
+        <article class="category-card" data-title="Software">
+          <h3>Software</h3>
+          <p>Application behavior, installation state, configuration, licensing, and repair notes.</p>
+        </article>
+
+        <article class="category-card" data-title="Windows Updates">
+          <h3>Windows Updates</h3>
+          <p>Update history, install failures, restart requirements, and servicing checks.</p>
+        </article>
+
+        <article class="category-card" data-title="Installed Applications">
+          <h3>Installed Applications</h3>
+          <p>Installed software lists, versions, publishers, paths, and support information.</p>
+        </article>
+
+        <article class="category-card" data-title="Removed / Uninstalled Applications">
+          <h3>Removed / Uninstalled Applications</h3>
+          <p>Uninstall history, cleanup checks, leftover files, and removal verification.</p>
+        </article>
+
+        <article class="category-card" data-title="Event Logs">
+          <h3>Event Logs</h3>
+          <p>Windows logs, error patterns, warnings, event sources, and timeline review.</p>
+        </article>
+
+        <article class="category-card" data-title="Services">
+          <h3>Services</h3>
+          <p>Service status, startup types, dependencies, recovery options, and failures.</p>
+        </article>
+
+        <article class="category-card" data-title="Reports">
+          <h3>Reports</h3>
+          <p>Structural placeholder for future printable or exportable diagnostic reports.</p>
         </article>
       </div>
 
@@ -84,7 +166,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>KZ Support Reference · Version 0.1.0</p>
+      <p>KZ Support Reference &middot; Version 0.1.0</p>
     </div>
   </footer>
 

@@ -4,7 +4,7 @@ KZ Support Reference is a portable IT support reference for PowerShell commands,
 
 ## Current Stage
 
-This is the initial static project structure. The current page provides a simple responsive landing view with placeholder reference categories and basic category filtering.
+This is an early static reference project. The home page provides searchable support categories, and the first real knowledge section is `Hardware -> Cables`.
 
 ## Technologies
 
@@ -22,6 +22,12 @@ The project is intended to work offline from a local folder or USB drive. It use
 
 Open `index.html` in a web browser.
 
+Current navigation path:
+
+- `index.html`
+- `hardware/index.html`
+- `hardware/cables/index.html`
+
 ## Future Direction
 
-Future updates can add detailed reference pages, command examples, troubleshooting checklists, scripts, notes, and richer search behavior while keeping the project lightweight and portable.
+Future updates can add detailed reference pages, command examples, troubleshooting checklists, scripts, notes, report structures, and richer search behavior while keeping the project lightweight and portable.

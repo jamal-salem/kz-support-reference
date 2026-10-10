@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cable and connectivity taxonomy for KZ Support Reference.">
+  <title>Cable / Connectivity Reference - KZ Support Reference</title>
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="../index.html">Hardware</a>
+        <span aria-hidden="true">/</span>
+        <span>Cable / Connectivity Reference</span>
+      </nav>
+      <p class="eyebrow">Hardware</p>
+      <h1>Cable / Connectivity Reference</h1>
+      <p class="subtitle">Central taxonomy for cables, connectors, ports, interfaces, protocols, standards, and related capabilities.</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="search-section" aria-labelledby="connectivity-search-heading">
+      <h2 id="connectivity-search-heading">Find a section</h2>
+      <label class="search-label" for="connectivity-search">Search connectivity sections</label>
+      <input type="search" id="connectivity-search" class="search-input" placeholder="Search USB, storage, display, networking..." autocomplete="off">
+    </section>
+
+    <section class="reference-section" aria-labelledby="connectivity-reference-heading">
+      <div class="section-heading">
+        <h2 id="connectivity-reference-heading">Connectivity Taxonomy</h2>
+        <p>Sections are loaded from the centralized connectivity data model.</p>
+      </div>
+
+      <div class="reference-grid" id="connectivity-sections-grid">
+        <noscript>
+          <article class="reference-card">
+            <h3>Connectivity data requires JavaScript</h3>
+            <p>Enable JavaScript to load the centralized section taxonomy.</p>
+          </article>
+        </noscript>
+      </div>
+
+      <p class="empty-state" id="connectivity-empty-state" hidden>No matching connectivity sections found.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>KZ Support Reference &middot; Version 0.1.0</p>
+    </div>
+  </footer>
+
+  <script src="../../data/connectivity-data.js"></script>
+  <script src="../../js/app.js"></script>
+</body>
+</html>

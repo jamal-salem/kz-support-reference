@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connectivity section inventory for KZ Support Reference.">
+  <title>Connectivity Section - KZ Support Reference</title>
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="../index.html">Hardware</a>
+        <span aria-hidden="true">/</span>
+        <a href="index.html">Cable / Connectivity Reference</a>
+        <span aria-hidden="true">/</span>
+        <span id="section-breadcrumb-label">Section</span>
+      </nav>
+      <p class="eyebrow">Connectivity Section</p>
+      <h1 id="section-title">Section</h1>
+      <p class="subtitle" id="section-subtitle">Section inventory loaded from the centralized connectivity data model.</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="reference-section" aria-labelledby="section-overview-heading">
+      <div class="section-heading">
+        <h2 id="section-overview-heading">Section Overview</h2>
+        <p id="section-status-message">Loading section data.</p>
+      </div>
+
+      <div class="reference-card" id="section-overview-card" hidden>
+        <dl id="section-overview-details"></dl>
+      </div>
+    </section>
+
+    <section class="reference-section" aria-labelledby="section-items-heading" id="section-items-area" hidden>
+      <div class="section-heading">
+        <h2 id="section-items-heading">Inventory Items</h2>
+        <p>Inventory-only records for this section.</p>
+      </div>
+
+      <div class="reference-grid" id="section-items-grid"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="item-detail-modal" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-item-title">
+      <button class="modal-close-button" type="button" id="modal-close-button" aria-label="Close item details">&times;</button>
+      <div class="modal-content">
+        <p class="eyebrow">Inventory Item</p>
+        <h2 id="modal-item-title">Item</h2>
+
+        <div class="modal-summary">
+          <p class="modal-metadata" id="modal-item-metadata"></p>
+          <div class="capability-badges" id="modal-item-capabilities"></div>
+        </div>
+
+        <div class="modal-accordion" id="modal-item-accordion"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>KZ Support Reference &middot; Version 0.1.0</p>
+    </div>
+  </footer>
+
+  <script src="../../data/connectivity-data.js"></script>
+  <script src="../../js/app.js"></script>
+</body>
+</html>

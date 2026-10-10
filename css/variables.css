@@ -1,15 +1,52 @@
 :root {
-  --color-background: #f6f7f9;
-  --color-surface: #ffffff;
-  --color-surface-muted: #eef2f6;
-  --color-text: #17202a;
-  --color-text-muted: #5f6b7a;
-  --color-border: #d9e0e8;
-  --color-accent: #2266aa;
-  --color-accent-dark: #184d82;
-  --color-focus: #78aee8;
+  --bg-primary: #000000;
+  --bg-secondary: #05070B;
+  --surface-primary: #05070B;
+  --surface-secondary: #0B1016;
+  --surface-elevated: #121A22;
 
-  --font-family-base: "Segoe UI", Arial, sans-serif;
+  --text-primary: #E5E5E5;
+  --text-secondary: #A0A0A0;
+  --text-muted: #7A7A7A;
+
+  --accent-primary: #4FC1FF;
+  --accent-secondary: #00E5EE;
+  --accent-soft: rgba(79, 193, 255, 0.12);
+  --accent-gold: #FFD700;
+  --success: #4EC9B0;
+  --error: #F44747;
+
+  --border-primary: #64748B;
+  --border-strong: #7C8EA6;
+  --border-muted: rgba(100, 116, 139, 0.5);
+
+  --shadow-card-subtle: none;
+  --shadow-elevated: none;
+  --shadow-focus: 0 0 0 2px rgba(79, 193, 255, 0.7);
+  --shadow-accent-subtle: none;
+
+  --bg: var(--bg-primary);
+  --surface: var(--surface-primary);
+  --surface-alt: var(--surface-secondary);
+  --text: var(--text-primary);
+  --neon: var(--text-primary);
+  --neon-blue: var(--accent-secondary);
+  --border: var(--border-primary);
+  --shadow-neon: none;
+  --shadow-blue: none;
+
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-alt);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-secondary);
+  --color-border: var(--border);
+  --color-accent: var(--accent-primary);
+  --color-accent-dark: var(--accent-secondary);
+  --color-focus: rgba(79, 193, 255, 0.3);
+
+  --font-family-base: "Segoe UI", "Noto Sans Arabic", "Consolas", "SFMono-Regular", "Cascadia Code", "Menlo", monospace, sans-serif;
+  --font-family-terminal: "Consolas", "Cascadia Code", "SFMono-Regular", "Menlo", monospace;
   --font-size-base: 16px;
   --line-height-base: 1.6;
 
@@ -23,6 +60,6 @@
   --radius-sm: 6px;
   --radius-md: 8px;
 
-  --shadow-card: 0 8px 24px rgba(23, 32, 42, 0.08);
+  --shadow-card: var(--shadow-card-subtle);
   --max-width: 1080px;
 }
